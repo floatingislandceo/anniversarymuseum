@@ -52,12 +52,12 @@ h1,h2,h3{font-weight:200;margin:0;text-wrap:balance;letter-spacing:-.01em}
 
 /* header */
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
-.brandrow{display:flex;flex-direction:column;align-items:center;padding-block:18px 6px;text-decoration:none}
-.brandrow img{height:28px;width:auto}
+.brandrow{display:flex;flex-direction:column;align-items:center;padding-block:22px 8px;text-decoration:none}
+.brandrow img{height:clamp(30px,4.2vw,52px);width:auto}
 .logo-w{display:none}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo-b{display:none}:root:not([data-theme="light"]) .logo-w{display:block}}
 :root[data-theme="dark"] .logo-b{display:none}:root[data-theme="dark"] .logo-w{display:block}
-.brandrow span{font-family:var(--display);font-size:12px;letter-spacing:.62em;margin-top:6px;margin-right:-.62em;color:var(--muted)}
+.brandrow span{font-family:var(--display);font-size:clamp(12px,1.4vw,18px);letter-spacing:.62em;margin-top:8px;margin-right:-.62em;color:var(--muted)}
 .navrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:6px 12px}
 .navrow nav{display:flex;gap:22px;flex-wrap:wrap;font-size:14px}
 .navrow nav a{text-decoration:none;color:var(--muted)}
